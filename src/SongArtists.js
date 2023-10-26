@@ -1,11 +1,10 @@
 //SongArtists.js
 function SongArtists({ artists }) {
+  const artistList = artists.map((artist) => <p key={artist}>{artist}</p>);
   return (
     <div className="artists">
       <h2>Song Artists</h2>
-      {artists.map((artist) => {
-        return <p key={artist}>{artist}</p>;
-      })}
+      {artistList}
     </div>
   );
 }
